@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Empleado</title>
+    </h:head>
+    <h:body>
+        <!-- Titulo principal -->
+        <h2>INFORMACION PERSONA</h2>
+        
+        <h:panelGrid columns="2">
+            
+            <h:outputLabel value="Numero de Cedula: " />
+            <h:outputText  value="#{formulario.cedula}" />
+            
+            <h:outputLabel value="Nombre Completo: " />
+            <h:outputLabel value="#{formulario.nombre} #{formulario.apellido}" />
+            
+            <h:outputLabel value="Fecha de Nacimiento: " />
+            <h:outputText  value="#{formulario.fechaNacimiento}" />
+            
+            <h:outputLabel value="Idioma(s): " />
+            <h:outputLabel value="#{formulario.idioma}" />
+            
+            <!--<h:outputLabel value="Estudio: " />
+            <h:outputLabel value="#{formulario.estudio}" />-->
+            
+            <h:outputLabel value="Dias Trabajados: " />
+            <h:outputLabel value="#{formulario.diasTrabajados}" />
+            
+            <h:outputLabel value="El sueldo Base es: " />
+            <h:outputLabel value="#{formulario.sueldoBase}" />
+            
+            <h:outputLabel value="El sueldo Total es: " />
+            <h:outputLabel value="#{empleado.sueldoTotal}" />
+             
+        </h:panelGrid>
+    </h:body>
+</html>
+    
